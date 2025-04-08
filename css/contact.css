@@ -1,0 +1,131 @@
+/* Contact page specific styles */
+.contact-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 6rem auto 2rem;
+}
+
+.contact-section h1 {
+    text-align: center;
+    font-size: 88px;
+    font-family: 'Arizonia', cursive;
+    margin-bottom: 3rem;
+    color: #000000;
+    font-weight: 400;
+}
+
+.contact-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+    background: linear-gradient(to top, #B1BFAE, #FFFFFF);
+    padding: 3rem;
+    border-radius: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #4C584A;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    background-color: #FFFFFF;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #4C584A;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 40px;
+    font-size: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.submit-btn:hover {
+    background-color: #3A443A;
+}
+
+.contact-info {
+    margin-top: 4rem;
+}
+
+.contact-info h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+.contact-methods {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-method {
+    background-color: #F5F5F5;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-method h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.contact-method p {
+    margin-bottom: 0.5rem;
+}
+
+.contact-method a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-method a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-links a {
+    font-weight: 600;
+}

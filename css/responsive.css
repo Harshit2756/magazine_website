@@ -1,0 +1,519 @@
+/* Tablet styles (768px to 1023px) */
+@media screen and (min-width: 768px) {
+
+    /* Header */
+    header {
+        padding: 0 3rem;
+    }
+
+    .logo-text {
+        font-size: 3.5rem;
+    }
+
+    nav ul {
+        gap: 2rem;
+    }
+
+    /* Hero section */
+    .hero {
+        min-height: 80vh;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+        max-width: 80%;
+    }
+
+    /* About section */
+    .about h2 {
+        font-size: 3.5rem;
+    }
+
+    .about p {
+        font-size: 1.3rem;
+        max-width: 800px;
+    }
+
+    /* History section */
+    .history {
+        padding: 6rem 4rem;
+    }
+
+    .history h2 {
+        font-size: 3.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .history-top {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .history-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 800px;
+        margin: 2rem auto 0;
+    }
+
+    .history-item {
+        padding: 2.5rem;
+    }
+
+    .history-item h3 {
+        font-size: 2.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .history-item p {
+        font-size: 1.3rem;
+    }
+
+    .history-text p {
+        font-size: 1.4rem;
+    }
+
+    .history-quote {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .history-quote p {
+        font-size: 1.4rem;
+    }
+
+    /* Latest section */
+    .latest {
+        padding: 6rem 4rem 8rem;
+    }
+
+    .latest h2 {
+        font-size: 3.5rem;
+        margin-bottom: 4rem;
+    }
+
+    .articles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        height: 350px;
+    }
+
+    .card h3 {
+        font-size: 2.4rem;
+    }
+
+    .card p {
+        font-size: 1rem;
+    }
+
+    /* UX Testing section */
+    .ux-testing {
+        padding: 6rem 4rem;
+    }
+
+    .ux-testing h2 {
+        font-size: 3.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .ux-testing-content {
+        gap: 3rem;
+    }
+
+    .ux-testing-text {
+        padding: 3rem;
+    }
+
+    .ux-testing-text p {
+        font-size: 1.4rem;
+    }
+
+    /* Sources section */
+    .sources {
+        padding: 6rem 4rem;
+    }
+
+    .sources h2 {
+        font-size: 3.5rem;
+        margin-bottom: 4rem;
+    }
+
+    .sources-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+
+    .source-card img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    /* Contact section */
+    .contact {
+        padding: 6rem 4rem;
+    }
+
+    .contact h2 {
+        font-size: 3.5rem;
+        margin-bottom: 4rem;
+    }
+
+    .contact-content {
+        max-width: 600px;
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .submit-btn {
+        padding: 0.8rem 2.5rem;
+        font-size: 1.1rem;
+    }
+
+    /* Article page styles */
+    .main-article {
+        padding: 2rem;
+    }
+
+    .article-content {
+        font-size: 1.15rem;
+    }
+
+    /* Contact page styles */
+    .contact-form {
+        padding: 2.5rem;
+    }
+
+    .contact-methods {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Source page styles */
+    .sources-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+
+    .source-item img {
+        height: 250px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+/* Desktop styles (1024px and above) */
+@media screen and (min-width: 1024px) {
+
+    /* Layout */
+    main {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    /* Header */
+    header {
+        padding: 0 6rem;
+    }
+
+    .logo-text {
+        font-size: 4rem;
+    }
+
+    nav ul {
+        gap: 4rem;
+    }
+
+    /* Hero section */
+    .hero {
+        min-height: 100vh;
+    }
+
+    .hero h1 {
+        font-size: 5rem;
+        max-width: 70%;
+        padding: 4rem;
+    }
+
+    /* About section */
+    .about {
+        padding: 4rem;
+    }
+
+    .about h2 {
+        font-size: 4rem;
+    }
+
+    .about p {
+        font-size: 1.5rem;
+        max-width: 1000px;
+    }
+
+    /* History section */
+    .history {
+        padding: 4rem;
+    }
+
+    .history h2 {
+        font-size: 4rem;
+    }
+
+    .history-top {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        max-width: 1200px;
+        align-items: center;
+    }
+
+    .history-grid {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1200px;
+        margin: 3rem auto 0;
+    }
+
+    .history-item {
+        padding: 3rem;
+    }
+
+    .history-item h3 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .history-item p {
+        font-size: 1.4rem;
+    }
+
+    .history-text p {
+        font-size: 1.5rem;
+    }
+
+    .history-quote {
+        max-width: 1000px;
+        margin: 2rem auto 0;
+    }
+
+    .history-quote p {
+        font-size: 1.6rem;
+    }
+
+    .history-quote footer {
+        font-size: 1.2rem;
+    }
+
+    /* Latest section */
+    .latest {
+        padding: 8rem 4rem 10rem;
+        position: relative;
+        margin-bottom: 2rem;
+    }
+
+    .latest h2 {
+        font-size: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .articles-grid {
+        position: relative;
+        height: 1220px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .articles-grid .card {
+        position: absolute;
+        width: calc(50% - 1rem);
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* First column */
+    .articles-grid .card:nth-child(1) {
+        left: 0;
+        top: 0;
+        height: 680px;
+    }
+
+    .articles-grid .card:nth-child(3) {
+        left: 0;
+        top: 710px;
+        height: 470px;
+    }
+
+    /* Second column */
+    .articles-grid .card:nth-child(2) {
+        right: 0;
+        top: 0;
+        height: 470px;
+    }
+
+    .articles-grid .card:nth-child(4) {
+        right: 0;
+        top: 500px;
+        height: 680px;
+    }
+
+    .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .card figcaption {
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(8px);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 1.8rem;
+    }
+
+    .card h3 {
+        font-size: 3.4rem;
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .card p {
+        font-size: 1rem;
+        line-height: 1.5;
+        max-width: 90%;
+    }
+
+    /* UX Testing section */
+    .ux-testing {
+        padding: 8rem 4rem;
+        margin-top: 0;
+    }
+
+    .ux-testing h2 {
+        font-size: 4rem;
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+
+    .ux-testing-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .ux-testing-text {
+        padding: 3rem;
+    }
+
+    .ux-testing-text p {
+        font-size: 1.4rem;
+    }
+
+    /* Sources section */
+    .sources {
+        padding: 8rem 4rem;
+    }
+
+    .sources h2 {
+        font-size: 4rem;
+        margin-bottom: 5rem;
+    }
+
+    .sources-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+
+    .source-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .source-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .source-card img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    /* Contact section */
+    .contact {
+        padding: 8rem 4rem;
+    }
+
+    .contact h2 {
+        font-size: 4rem;
+        margin-bottom: 5rem;
+    }
+
+    .contact-content {
+        max-width: 700px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    .submit-btn {
+        padding: 1rem 3rem;
+        font-size: 1.2rem;
+    }
+
+    /* Article page styles */
+    .main-article {
+        padding: 3rem;
+    }
+
+    .article-content {
+        font-size: 1.25rem;
+    }
+
+    .key-metrics table {
+        font-size: 1.1rem;
+    }
+
+    /* Contact page styles */
+    .contact-section {
+        padding: 3rem;
+    }
+
+    .contact-form {
+        padding: 3rem;
+    }
+
+    /* Source page styles */
+    .sources-section {
+        padding: 3rem;
+    }
+
+    .source-item img {
+        height: 300px;
+    }
+
+    .attribution {
+        padding: 3rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 4rem 6rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .copyright {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: none;
+    }
+}
