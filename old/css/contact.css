@@ -10,7 +10,7 @@
     font-size: 88px;
     font-family: 'Arizonia', cursive;
     margin-bottom: 3rem;
-    color: #333;
+    color: #000000;
     font-weight: 400;
 }
 
@@ -41,7 +41,7 @@ input,
 textarea {
     width: 100%;
     padding: 1rem;
-    border: 2px;
+    border: 2px solid #4C584A;
     border-radius: 15px;
     font-size: 1.2rem;
     background-color: #FFFFFF;
@@ -60,7 +60,7 @@ textarea {
     border: none;
     border-radius: 15px;
     padding: 10px 40px;
-    font-size: 25px;
+    font-size: 40px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     align-self: center;
@@ -73,7 +73,7 @@ textarea {
 }
 
 .contact-info {
-    /* margin-top: 1rem; */
+    margin-top: 4rem;
 }
 
 .contact-info h2 {
@@ -85,8 +85,8 @@ textarea {
 
 .contact-methods {
     display: grid;
-    /* grid-template-columns:repeat(2, 1fr); */
-    gap: 1rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
     max-width: 900px;
     margin: 0 auto;
 }

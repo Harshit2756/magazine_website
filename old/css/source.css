@@ -7,11 +7,8 @@
 
 .sources-section h1 {
     text-align: center;
-    font-size: 88px;
-    font-family: 'Arizonia', cursive;
-    margin-bottom: 3rem;
-    color: #333;
-    font-weight: 400;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
 }
 
 .sources-intro {
@@ -61,4 +58,43 @@
     margin-bottom: 0.5rem;
 }
 
+.attribution {
+    background-color: #F5F5F5;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 3rem;
+}
 
+.attribution h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+.resource-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.resource-list li {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.resource-list h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+}
+
+.resource-list p {
+    font-size: 1rem;
+    color: #333;
+}

@@ -86,8 +86,6 @@
     /* Latest section */
     .latest {
         padding: 6rem 4rem 8rem;
-        position: relative;
-        margin-bottom: 2rem;
     }
 
     .latest h2 {
@@ -96,62 +94,19 @@
     }
 
     .articles-grid {
-        position: relative;
-        height: 1220px;
-        max-width: 1200px;
-        margin: 0 auto;
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .articles-grid .card {
-        position: absolute;
-        width: calc(50% - 1rem);
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    /* First column */
-    .articles-grid .card:nth-child(1) {
-        left: 0;
-        top: 0;
-        height: 680px;
-    }
-
-    .articles-grid .card:nth-child(3) {
-        left: 0;
-        top: 710px;
-        height: 470px;
-    }
-
-    /* Second column */
-    .articles-grid .card:nth-child(2) {
-        right: 0;
-        top: 0;
-        height: 470px;
-    }
-
-    .articles-grid .card:nth-child(4) {
-        right: 0;
-        top: 500px;
-        height: 680px;
-    }
-
-    .card figcaption {
-        background: rgba(0, 0, 0, 0.2);
-        backdrop-filter: blur(8px);
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-        padding: 1.8rem;
+    .card {
+        height: 350px;
     }
 
     .card h3 {
         font-size: 2.4rem;
-        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     }
 
     .card p {
         font-size: 1rem;
-        line-height: 1.5;
-        max-width: 90%;
     }
 
     /* UX Testing section */
@@ -228,18 +183,13 @@
         font-size: 1.15rem;
     }
 
-    .related-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 0 1rem;
-    }
-
     /* Contact page styles */
     .contact-form {
         padding: 2.5rem;
+    }
+
+    .contact-methods {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     /* Source page styles */
@@ -252,8 +202,6 @@
         height: 250px;
     }
 
-
-
     /* Footer */
     footer {
         padding: 3rem;
@@ -265,6 +213,12 @@
 
 /* Desktop styles (1024px and above) */
 @media screen and (min-width: 1024px) {
+
+    /* Layout */
+    main {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
 
     /* Header */
     header {
@@ -300,7 +254,7 @@
     }
 
     .about p {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         max-width: 1000px;
     }
 
@@ -335,12 +289,12 @@
         margin-bottom: 1.5rem;
     }
 
-    /* .history-item p {
-        font-size: 1rem;
-    } */
+    .history-item p {
+        font-size: 1.4rem;
+    }
 
     .history-text p {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .history-quote {
@@ -349,11 +303,11 @@
     }
 
     .history-quote p {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
 
     .history-quote footer {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     /* Latest section */
@@ -551,13 +505,14 @@
 
     /* Footer */
     footer {
-        padding: 2rem;
+        padding: 4rem 6rem;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
     }
 
     .copyright {
-        margin-top: 1rem;
-        margin-bottom: 0;
+        margin-top: 0;
         padding-top: 0;
         border-top: none;
     }
