@@ -1,17 +1,50 @@
-/* Tablet styles (768px to 1023px) */
+/* Tablet styles (768px and above) */
 @media screen and (min-width: 768px) {
 
     /* Header */
     header {
-        padding: 0 3rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .logo {
+        margin-bottom: 0;
+        text-align: left;
+        width: auto;
+        flex: 0 0 auto;
     }
 
     .logo-text {
         font-size: 3.5rem;
     }
 
+    header nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        flex: 1;
+        justify-content: flex-end;
+    }
+
     nav ul {
+        margin: 0;
         gap: 2rem;
+        flex-direction: row;
+        width: auto;
+        justify-content: flex-end;
+    }
+
+    .search-form {
+        width: auto;
+        margin: 0 0 0 2rem;
+        justify-content: flex-end;
+    }
+
+    .search-form input[type="search"] {
+        width: 200px;
     }
 
     /* Hero section */
@@ -51,27 +84,13 @@
         margin: 0 auto;
     }
 
-    .history-grid {
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 800px;
-        margin: 2rem auto 0;
-    }
-
-    .history-item {
-        padding: 2.5rem;
-    }
-
-    .history-item h3 {
-        font-size: 2.8rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .history-item p {
-        font-size: 1.3rem;
+    .history-image {
+        height: 450px;
+        width: 500px;
     }
 
     .history-text p {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .history-quote {
@@ -80,7 +99,7 @@
     }
 
     .history-quote p {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     /* Latest section */
@@ -156,7 +175,7 @@
 
     /* UX Testing section */
     .ux-testing {
-        padding: 6rem 4rem;
+        padding: 3rem 4rem;
     }
 
     .ux-testing h2 {
@@ -170,10 +189,16 @@
 
     .ux-testing-text {
         padding: 3rem;
+        padding-top: 0;
     }
 
     .ux-testing-text p {
         font-size: 1.4rem;
+    }
+
+    .ux-testing-image {
+        height: 400px;
+        width: 400px;
     }
 
     /* Sources section */
@@ -198,7 +223,7 @@
 
     /* Contact section */
     .contact {
-        padding: 6rem 4rem;
+        padding: 3rem 4rem;
     }
 
     .contact h2 {
@@ -208,10 +233,16 @@
 
     .contact-content {
         max-width: 600px;
+        margin: 0;
     }
 
     .form-group {
         margin-bottom: 1.5rem;
+    }
+
+    .contact-form {
+        margin: 0;
+        padding-top: 0;
     }
 
     .submit-btn {
@@ -222,19 +253,84 @@
     /* Article page styles */
     .main-article {
         padding: 2rem;
+        margin-top: 6rem;
+    }
+
+    .main-article h1 {
+        font-size: 60px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .divider {
+        width: 80%;
+        margin: 1rem auto 2.5rem;
     }
 
     .article-content {
-        font-size: 1.15rem;
+        line-height: 1.7;
     }
 
-    .related-grid {
+    .article-content h2 {
+        font-size: 30px;
+        margin-top: 2.5rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .article-content h3 {
+        font-size: 22px;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .article-content p {
+        font-size: 17px;
+        margin-bottom: 1.5rem;
+    }
+
+    .article-intro,
+    .article-section {
         display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    .article-section.reverse .article-image {
+        order: 2;
+    }
+
+    .article-section.reverse .article-text {
+        order: 1;
+    }
+
+    .article-image img {
+        width: 100%;
+        height: auto;
+        max-height: 450px;
+        object-fit: cover;
+    }
+
+    .article-Img {
+        width: 350px;
+        height: 350px;
+        margin: 0 auto 1.5rem;
+    }
+
+    /* Related content on article page */
+    .related-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-        max-width: 1000px;
+        gap: 2.5rem;
+        max-width: 900px;
+    }
+
+    .main-article {
+        padding: 3rem;
+    }
+
+    .article-content {
         margin: 0 auto;
-        padding: 0 1rem;
     }
 
     /* Contact page styles */
@@ -252,14 +348,13 @@
         height: 250px;
     }
 
-
-
     /* Footer */
     footer {
         padding: 3rem;
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        align-items: center;
     }
 }
 
@@ -517,15 +612,76 @@
     /* Article page styles */
     .main-article {
         padding: 3rem;
+        margin-top: 7rem;
+    }
+
+    .main-article h1 {
+        font-size: 88px;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .divider {
+        width: 80%;
+        margin: 1rem auto 3rem;
     }
 
     .article-content {
-        font-size: 1.25rem;
+        line-height: 1.8;
     }
 
-    .key-metrics table {
+    .article-content h2 {
+        font-size: 32px;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .article-content h3 {
+        font-size: 24px;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .article-content p {
+        font-size: 18px;
+        margin-bottom: 1.5rem;
+    }
+
+    .article-intro {
+        grid-template-columns: 0.8fr 1.2fr;
+        gap: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .article-section.reverse {
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    /* Related content on article page */
+    .related-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        max-width: 1000px;
+    }
+
+    .main-article h1 {
+        font-size: 100px;
+    }
+
+    .article-content p {
+        font-size: 20px;
+    }
+
+    .related-item h3 {
+        font-size: 1.8rem;
+    }
+
+    .related-item p {
         font-size: 1.1rem;
     }
+
 
     /* Contact page styles */
     .contact-section {
@@ -534,6 +690,8 @@
 
     .contact-form {
         padding: 3rem;
+        margin: 0 auto;
+        max-width: 800px;
     }
 
     /* Source page styles */
